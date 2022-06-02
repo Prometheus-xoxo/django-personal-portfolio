@@ -21,9 +21,9 @@
 
   <body>
 
-    <body style="background-color:plum ;"></body>
+    <body style="background-color:plum ; font-family:'Times New Roman', Times, serif; font-weight: bold;"></body>
     
-    <nav id="topNav" class="navbar navbar-expand-md navbar-light">
+    <nav id="topNav" class="navbar navbar-expand-md navbar-light bg-primary">
       <div class="container">
         <a class="navbar-brand" href="{% url 'home' %}">
           <img src="{% static 'portfolio/UDU.png' %}" width="30" height="30" class="d-inline-block align-top" alt="Ify's Logo">
@@ -42,9 +42,6 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://twitter.com/E4ma_u_" target="_blank">Twitter</a>
-            </li>
-            <li>
-              <a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-primary">Blog</a>
             </li>
           </ul>
         </div>
