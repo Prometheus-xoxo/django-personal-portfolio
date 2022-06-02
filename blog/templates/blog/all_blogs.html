@@ -4,11 +4,11 @@
 
 {% block content %}
 
-<h1 id="blogtitle" class="font-weight-bold text-center">Ify's Blog</h1>
+<h1 id="blogtitle" class="font-weight-bold text-center" style="font-family:'Times New Roman', Times, serif">My Blogs</h1>
 
-<marquee><h3 class="text-center mb-5">Ifeoma has written {{ blogs.count }} blog{{ blogs.count|pluralize }}</h3></marquee>
+<marquee><h3 class="text-center mb-5" style="font-family:'Times New Roman', Times, serif">Ifeoma has written {{ blogs.count }} blog{{ blogs.count|pluralize }}</h3></marquee>
 
-<body style="background-color:rgb(247, 147, 197);"></body>
+<body style="background-color:rgb(247, 147, 197); font-family:'Times New Roman', Times, serif"></body>
 
 <div class="row">
   {% for blog in blogs %}
