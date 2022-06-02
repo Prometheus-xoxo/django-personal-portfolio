@@ -2,16 +2,17 @@
 
 {% block content %}
 
-    <h1 style="font-family:'Times New Roman', Times, serif"> Ifycodes</h1>
+
+    <h1> Ifycodes</h1>
 
 {% load static %}
 
 <div class="row justify-content-center my-3">
     <div class="col-5">
-        <img src="{% static 'portfolio/sticker.png' %}" class="img-fluid" alt="Image to align" >  
-        <p style="font-family:'Times New Roman', Times, serif;">
+        <img src="{% static 'portfolio/sticker.png' %}" class="img-fluid">
+        <p>
           <h2>Hi,I'm Ifeoma Udu, a Fullstack Web Developer.</h2>
-          I'm a Fullstack Web Developer and Technical Writer based in Lagos,Nigeria. 
+          I'm a Fullstack Web Developer and Technical Writer based in Lagos,Nigeria.
           I create cool and professional websites, i also do a little desigining on canva from time to time.
         </p>
     </div>
@@ -19,11 +20,11 @@
 
 <div class="row justify-content-center mb-3">
     <div class="col-md-9 text-center">
-      <marquee><h3 id="hometext" class="font-weight-bold" style="font-family:'Times New Roman', Times, serif">Welcome To My Online Portfolio😘</h3></marquee>
+      <marquee><h3 id="hometext">Welcome To My Online Portfolio😘</h3></marquee>
     </div>
 </div>
 
-<h1 class="mt-5" style="font-family:'Times New Roman', Times, serif">Portfolio</h1>
+<h1 class="mt-5">Portfolio</h1>
 <hr>
 <div class="row">
   {% for project in projects %}

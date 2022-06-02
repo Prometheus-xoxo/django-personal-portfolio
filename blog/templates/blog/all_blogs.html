@@ -4,11 +4,11 @@
 
 {% block content %}
 
-<h1 id="blogtitle" class="font-weight-bold text-center" style="font-family:'Times New Roman', Times, serif">My Blogs</h1>
+<h1>My Blogs</h1>
 
-<marquee><h3 class="text-center mb-5" style="font-family:'Times New Roman', Times, serif">Ifeoma has written {{ blogs.count }} blog{{ blogs.count|pluralize }}</h3></marquee>
+<marquee><h3 class="text-center mb-5">Ifeoma has written {{ blogs.count }} blog{{ blogs.count|pluralize }}</h3></marquee>
 
-<body style="background-color:rgb(247, 147, 197); font-family:'Times New Roman', Times, serif"></body>
+
 
 <div class="row">
   {% for blog in blogs %}
@@ -23,8 +23,8 @@
 
     <img src="{{ blog.image.url }}" class="img-fluid mb-2">
     {% endif %}
-    <h3>{{ blog.title }}</h3>
-    <p>{{ blog.description }}</p>
+    <h3><b>{{ blog.title }}:</b></h3> {{ blog.description }}
+
 
    </div>
   {% endfor %}
